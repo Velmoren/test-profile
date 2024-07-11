@@ -105,7 +105,17 @@
 						],
 						"scripts": []
 					}
-				}
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "buildTarget": "myrtex-mf-profile:build:production",
+            "repo": "https://github.com/Velmoren/test-profile.git",
+            "baseHref": "/test-profile/",
+            "dir": "dist/myrtex-mf-profile/",
+            "noNojekyll": true
+          }
+        }
 			}
 		}
 	},
